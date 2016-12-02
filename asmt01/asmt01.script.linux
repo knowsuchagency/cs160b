@@ -1,0 +1,48 @@
+Script started on Sun 02 Oct 2016 12:10:40 PM PDT
+[cs260a@jacqueline ~]$ pwd
+/usr/people/.cs260a
+[cs260a@jacqueline ~]$ date
+Sun Oct  2 12:10:42 PDT 2016
+[cs260a@jacqueline ~]$ id
+uid=7000(cs260a) gid=7000(cs260a) groups=7000(cs260a) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+[cs260a@jacqueline ~]$ 
+[cs260a@jacqueline ~]$ uptime
+ 12:10:46 up 25 days, 23:31,  3 users,  load average: 0.00, 0.01, 0.05
+[cs260a@jacqueline ~]$ hostname
+jacqueline.acrc.ccsf.edu
+[cs260a@jacqueline ~]$ id
+uid=7000(cs260a) gid=7000(cs260a) groups=7000(cs260a) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+[cs260a@jacqueline ~]$ 
+[cs260a@jacqueline ~]$ ./sinfo
+Report on system jacqueline.acrc.ccsf.edu run on Sun Oct  2 12:10:58 PDT 2016:
+
+This semester there are 18 computer classes taught by
+25 faculty members. There are a total of 534 student
+accounts, though 158 of them are inactive
+
+The system load average is  0.05.
+
+Currently, there are 3 user connections, though only 2
+of them are unique users
+
+The user cs260a is currently logged in 2 times.
+She or he is in 0 computer classes this semester.
+[cs260a@jacqueline ~]$ 
+[cs260a@jacqueline ~]$ ./sinfo gboyd
+Report on system jacqueline.acrc.ccsf.edu run on Sun Oct  2 12:11:04 PDT 2016:
+
+This semester there are 18 computer classes taught by
+25 faculty members. There are a total of 534 student
+accounts, though 158 of them are inactive
+
+The system load average is  0.05.
+
+Currently, there are 3 user connections, though only 2
+of them are unique users
+
+The user gboyd is currently logged in 0 times.
+She or he is in 7 computer classes this semester.
+[cs260a@jacqueline ~]$ exit
+exit
+
+Script done on Sun 02 Oct 2016 12:11:19 PM PDT

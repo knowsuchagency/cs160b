@@ -1,0 +1,49 @@
+Script started on Sun 02 Oct 2016 12:01:37 PM PDT
+[gboyd02@hills ~]$ date
+Sun Oct  2 12:01:39 PDT 2016
+[gboyd02@hills ~]$ pwd
+/students/gboyd02
+[gboyd02@hills ~]$ id
+uid=29000(gboyd02) gid=506(students) groups=506(students),208(cisdept),360(clabad)
+[gboyd02@hills ~]$ 
+[gboyd02@hills ~]$ uptime
+ 12:01:43 up 26 days,  4:04, 29 users,  load average: 0.82, 0.44, 0.16
+[gboyd02@hills ~]$ id
+uid=29000(gboyd02) gid=506(students) groups=506(students),208(cisdept),360(clabad)
+[gboyd02@hills ~]$ hostname
+hills.ccsf.cc.ca.us
+[gboyd02@hills ~]$ 
+[gboyd02@hills ~]$ ./sinfo
+Report on system hills.ccsf.cc.ca.us run on Sun Oct  2 12:01:53 PDT 2016:
+
+This semester there are 274 computer classes taught by
+63 faculty members. There are a total of 11163 student
+accounts, though 3735 of them are inactive
+
+The system load average is  0.16.
+
+Currently, there are 29 user connections, though only 21
+of them are unique users
+
+The user gboyd02 is currently logged in 1 times.
+She or he is in 0 computer classes this semester.
+[gboyd02@hills ~]$ 
+[gboyd02@hills ~]$ ./sinfo gboyd
+Report on system hills.ccsf.cc.ca.us run on Sun Oct  2 12:01:59 PDT 2016:
+
+This semester there are 274 computer classes taught by
+63 faculty members. There are a total of 11163 student
+accounts, though 3735 of them are inactive
+
+The system load average is  0.16.
+
+Currently, there are 30 user connections, though only 21
+of them are unique users
+
+The user gboyd is currently logged in 1 times.
+She or he is in 6 computer classes this semester.
+[gboyd02@hills ~]$ 
+[gboyd02@hills ~]$ exit
+exit
+
+Script done on Sun 02 Oct 2016 12:02:18 PM PDT

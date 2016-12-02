@@ -1,0 +1,35 @@
+#/usr/bin/bash
+echo
+
+# print host and time of report
+echo You are logged into $(hostname) on $(date)
+echo
+
+# find user and print out how many times they're currently logged in
+user=${1:-$LOGNAME}
+user_count=$(who | grep $user | wc -l)
+
+echo $user is currently logged in $user_count times
+echo
+
+echo There are $(who | wc -l) users logged in and $(who | cut -d ' ' -f 1 | sort | uniq | wc -l) are unique.
+echo
+
+# students, faculty, and computer courses
+cis_faculty_count=$(cat /etc/group | grep cisdept | cut -d : -f 4 | sed 's/,/\n/g' | wc -l)
+student_count=$(cat /etc/passwd | cut -d : -f 4 | grep 506 | wc -l)
+disabled_users_count=$(cat /etc/passwd | grep -E "(/bin/drop)|(/sbin/nologin)" | wc -l)
+computer_courses_count=$(cat /etc/group | egrep "^(c7|c3)" | wc -l)
+
+echo There are $cis_faculty_count faculty members in the cis dept
+echo
+echo There are $student_count students and $disabled_users_count are inactive
+echo
+echo There are $computer_courses_count CS courses this semester
+echo
+echo $user is in $(cat /etc/group | egrep "^(c7|c3).*$user" | wc -l) computer classes this semester
+echo
+
+# load average
+echo The 15 minute load average is $(uptime | cut -d ' ' -f 15)
+echo

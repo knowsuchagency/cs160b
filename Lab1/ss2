@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Output line 1" 
+echo "Error line 1" >&2
+echo "Output line 2" 
+echo "Error line 2" >&2
+echo "Output line 3" 
+echo "Error line 3" >&2

@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "The value of TEST is $TEST"
+echo "Setting TEST to 'new TEST value'"
+TEST="new TEST value"

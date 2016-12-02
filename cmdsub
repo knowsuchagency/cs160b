@@ -1,0 +1,24 @@
+#/usr/bin/bash
+
+
+# get user input
+user_input=${1:?"This command takes one argument"}
+echo input: $user_input
+
+# compute line and word counts
+word_count=$(echo $user_input | wc -m)
+line_count=$(echo $user_input | wc -l)
+
+echo line count: "$line_count"
+echo word count: "$word_count"
+
+# get online users
+me=$(whoami)
+online_users=$(users)
+nusers="${online_users//$me/}"
+nonline_users=$(echo $online_users | wc -w)
+
+echo number of online users: $nonline_users
+
+# compute a random number below 1000
+echo a random number less than 1000: $(($RANDOM % 1000))

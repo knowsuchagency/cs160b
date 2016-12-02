@@ -1,0 +1,34 @@
+#
+#
+#  cmdsub - skeleton file for the Lab on Command Substitution and Arithmetic
+#   for Greg Boyd's CS160B class
+#
+# this next command will copy the contents of the first argument
+# into the variable LINE. If no first argument was specified, the program
+# will abort with a message.
+LINE=${1:?"must run $(basename $0) with a line of text as an argument"}
+
+# In this shell script you should try to report everything in human-readable
+# sentences.  You must use command and arithmetic-substitution to place
+# the output of your commands in text messages about them. Here is an example:
+#   nitems=$(ls | wc -l)
+#   echo "There are $nitems items in the directory $PWD"
+
+# Now report the following information using $LINE:
+#   - the line of text itself enclosed in " "
+#   - the number of characters in the line of text
+#   - the number of words in the line of text
+
+
+# Next, report the number of users, not including yourself, that are logged
+# into hills. The number should be unique users - and not include duplicates.
+# (hint: look at the output of who)
+
+# Last, output a random number between 0 and 1000. You can use the $RANDOM
+# variable for this, with arithmetic and the modulus operator (get the
+# remainder of $RANDOM and 1000)
+
+
+# That's it for the shell script! Do the analysis at the end of the lab, 
+# then transfer cmdsub to get credit for the lab today!
+

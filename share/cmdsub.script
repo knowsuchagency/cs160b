@@ -1,0 +1,24 @@
+Script started on Thu 20 Oct 2016 09:04:16 PM PDT
+[sfitzpa1@hills cs160b]$ date
+Thu Oct 20 21:04:21 PDT 2016
+[sfitzpa1@hills cs160b]$ pwd
+/students/sfitzpa1/cs160b
+[sfitzpa1@hills cs160b]$ id
+uid=42607(sfitzpa1) gid=506(students) groups=506(students),1054(c77309),1081(c74418),1087(c72835),1113(c75984)
+[sfitzpa1@hills cs160b]$ hostname
+hills.ccsf.cc.ca.us
+[sfitzpa1@hills cs160b]$ ./cmdsub "hello, world"
+input: hello, world
+line count: 1
+word count: 13
+number of online users: 57
+a random number less than 1000: 6
+[sfitzpa1@hills cs160b]$ ./cmdsub "hello, world"
+input: hello, world
+line count: 1
+word count: 13
+number of online users: 57
+a random number less than 1000: 508
+[sfitzpa1@hills cs160b]$ exit
+
+Script done on Thu 20 Oct 2016 09:06:16 PM PDT

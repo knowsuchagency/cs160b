@@ -1,0 +1,41 @@
+Script started on Tue 29 Nov 2016 09:44:32 AM PST
+[gboyd@unixguy4 asmt03]$ date
+Tue Nov 29 09:44:35 PST 2016
+[gboyd@unixguy4 asmt03]$ pwd
+/home/gboyd/cs160b/asmts/asmt03
+[gboyd@unixguy4 asmt03]$ id
+uid=501(gboyd) gid=502(gboyd) groups=502(gboyd),36(kvm),505(libvirt) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+[gboyd@unixguy4 asmt03]$ ls new.vcf
+ls: cannot access new.vcf: No such file or directory
+[gboyd@unixguy4 asmt03]$ ./vcard new.vcf
+Enter the name data:
+Prefix (Mr.,Mrs.,Ms.,Dr.)(empty for no prefix):Mr.
+First name:Greg
+Middle name(s):
+Last name:Boyd
+Company name (empty to skip):City College of San Francisco
+Department name (empty to skip):Computer Science
+Phone number format: XXX-XXX-XXXX
+Cell phone (empty if none):(415)444-4444
+Enter email (empty if none):gboyd.ccsf@gmail.com
+Enter birthday:
+Enter 4-digit year (empty to skip birthday):1980
+Enter a month number (1-12)4
+Enter a day number (1-31)14
+Enter NOTE (empty for no NOTE):Greg was in my Android class, Fall 2015
+[gboyd@unixguy4 asmt03]$ cat new.vcf
+BEGIN:VCARD
+VERSION:3.0
+N:Boyd;Greg;;Mr.;
+FN: Greg  Boyd
+ORG:City College of San Francisco;Computer Science
+TEL;TYPE=cell:(415)444-4444
+EMAIL;TYPE=INTERNET:gboyd.ccsf@gmail.com
+BDAY:1980-04-14
+NOTE:Greg was in my Android class\, Fall 2015
+END:VCARD
+[gboyd@unixguy4 asmt03]$ 
+[gboyd@unixguy4 asmt03]$ exit
+exit
+
+Script done on Tue 29 Nov 2016 09:49:38 AM PST

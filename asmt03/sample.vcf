@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Boyd;Greg;;Mr.;
+ORG:City College of San Francisco;Computer Science
+Tel;TYPE=work,voice:415-239-3139
+TEL;TYPE=cell:(415)444-4444
+EMAIL;TYPE=INTERNET:gboyd@ccsf.edu
+BDAY:1980-01-04
+NOTE:Greg was in my Android class\, Fall 2015
+END:VCARD

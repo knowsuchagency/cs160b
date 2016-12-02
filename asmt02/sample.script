@@ -1,0 +1,47 @@
+Script started on Sun 16 Oct 2016 12:32:26 PM PDT
+gboyd@hills[asmt02]$ # Greg Boyd
+gboyd@hills[asmt02]$ pwd
+/users/gboyd/cs160b/asmts/asmt02
+gboyd@hills[asmt02]$ id d 
+uid=3496(gboyd) gid=208(cisdept) groups=208(cisdept),505(acctmngr),1077(c71763),1078(c71767),1079(c72044),1080(c72720),1081(c74418),1082(c76716)
+gboyd@hills[asmt02]$ date
+Sun Oct 16 12:32:32 PDT 2016
+gboyd@hills[asmt02]$ 
+gboyd@hills[asmt02]$ chk -f 
+chk:ERROR: must have exactly two arguments
+chk: USAGE: chk { -f filepath | -u user }
+gboyd@hills[asmt02]$ chk -f chk
+'chk' is a regular file
+It is readable, writable, executable.
+gboyd@hills[asmt02]$ ./chk -f .
+'.' is a directory
+It is readable, writable, executable.
+gboyd@hills[asmt02]$ ./chk -f /dev/null
+'/dev/null' is not a known file type
+It is readable, writable, not executable.
+gboyd@hills[asmt02]$ ./chk -f ~/pub
+'/users/gboyd/pub' is a symbolic link to a directory
+It is readable, writable, executable.
+gboyd@hills[asmt02]$ ./chk -f "my resume"
+chk:ERROR: 'my resume' does not exist
+gboyd@hills[asmt02]$ 
+gboyd@hills[asmt02]$ ./chk -u gboyd
+'gboyd's home directory is /users/gboyd
+Currently logged in
+gboyd@hills[asmt02]$ 
+gboyd@hills[asmt02]$ ./chk -u greg
+chk:ERROR: user 'greg' cannot be found on the system
+gboyd@hills[asmt02]$ ./chk -u gboyd02
+'gboyd02's home directory is /students/gboyd02
+last logged in at Sun Oct  2 12:01 
+gboyd@hills[asmt02]$ ./chk -u nobody
+'nobody's home directory is /
+not logged in since Sat Oct  1 06:52:15 2016
+gboyd@hills[asmt02]$ ./chk -d gboyd
+chk:ERROR: first argument must be -f or -u
+chk: USAGE: chk { -f filepath | -u user }
+gboyd@hills[asmt02]$ 
+gboyd@hills[asmt02]$ exit
+exit
+
+Script done on Sun 16 Oct 2016 12:33:36 PM PDT

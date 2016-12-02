@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+arg=${1:?"need an argument"}
+
+if [ -L "$arg" ]; then
+    echo "$arg is a symbolic link"
+elif ! [ -e "$arg" ]; then
+    echo "$arg does not exist"
+elif [ -f "$arg" ]; then
+    echo "$arg is a regular file"
+elif [ -d "$arg" ]; then
+    echo "$arg is a directory"
+else
+    echo "$arg is unknown"
+fi
