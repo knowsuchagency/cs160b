@@ -1,0 +1,26 @@
+Script started on Thu 01 Dec 2016 05:53:39 PM PST
+[sfitzpa1@hills asmt01]$ date
+Thu Dec  1 17:53:43 PST 2016
+[sfitzpa1@hills asmt01]$ id
+uid=42607(sfitzpa1) gid=506(students) groups=506(students),1054(c77309),1081(c74418),1087(c72835),1113(c75984)
+[sfitzpa1@hills asmt01]$ ./sinfo
+
+You are logged into hills.ccsf.cc.ca.us on Thu Dec 1 17:53:48 PST 2016
+
+sfitzpa1 is currently logged in 2 times
+
+There are 18 users logged in and 10 are unique.
+
+There are 6 faculty members in the cis dept
+
+There are 4999 students and 1858 are inactive
+
+There are 274 CS courses this semester
+
+sfitzpa1 is in 4 computer classes this semester
+
+The 15 minute load average is
+
+[sfitzpa1@hills asmt01]$ exit
+
+Script done on Thu 01 Dec 2016 05:53:50 PM PST

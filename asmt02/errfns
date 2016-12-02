@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # this file contains two function error() and fatal() as 
 # described below.
@@ -25,25 +25,6 @@ fatal() {
     exit 1
 }
 
-
-check_file() {
-    filename=$1
-    echo "filename: $filename"
-}
-
-check_user() {
-    _user=$1
-    echo "user $user_"
-}
-
-# check initial flag argument
-[[ $1 =~ ^(-f|-u)$ ]] || fatal "first argument must be either -f or -u"
-
-# check second argument
-arg=${2:?"$0 requires a filename or user argument"}
-
-if [ $1 == -f ] ; then
-    check_file $arg
-else
-    check_user $arg
-fi
+#
+# your program goes here
+#
